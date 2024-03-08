@@ -4,7 +4,7 @@
 
 This repository contains a suite of automated tests for verifying the functionality of the Ultra Course Creation process. The tests are designed to ensure that instructors can successfully create and save tests with questions in an Ultra course environment.
 
-The test suite is implemented using WebdriverIO, a powerful and flexible framework for Node.js that allows for automated browser testing. WebdriverIO is chosen for its concise syntax and compatibility with modern web applications.
+The test suite is implemented using [WebdriverIO](https://webdriver.io/) a powerful and flexible framework for Node.js that allows for automated browser testing. WebdriverIO is chosen for its concise syntax and compatibility with modern web applications.
 
 ### Quick Demo
 [https://www.loom.com/share/34f98648569943ada93b3a95ad1a2efc](https://www.loom.com/share/34f98648569943ada93b3a95ad1a2efc)
