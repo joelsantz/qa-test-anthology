@@ -1,4 +1,10 @@
 import type { Options } from '@wdio/types'
+
+const headless = process.env.HEADLESS === 'true';
+const chromeArgs = headless
+    ? ['--headless', '--disable-gpu', '--window-size=1280,800', '--no-sandbox', '--disable-dev-shm-usage']
+    : ['--window-size=1280,800'];
+
 export const config: Options.Testrunner = {
     //
     // ====================
@@ -59,7 +65,10 @@ export const config: Options.Testrunner = {
     // https://saucelabs.com/platform/platform-configurator
     //
     capabilities: [{
-        browserName: 'chrome'
+        browserName: 'chrome',
+        'goog:chromeOptions': {
+            args: chromeArgs
+        }
     }],
 
     //
