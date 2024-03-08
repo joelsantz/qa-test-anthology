@@ -1,4 +1,4 @@
-# Automated Test Suite for Ultra Course Creation
+# Automated Test Suite for Ultra Test Creation (E2E)
 
 ## Overview
 
