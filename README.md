@@ -27,8 +27,11 @@ The test suite utilizes the Page Object Model (POM) design pattern. This pattern
 
 To run these tests, you will need Node.js and npm installed on your machine. Refer to the `package.json` file for the specific dependencies required.
 
-## Running Tests
+## Running Test Locally and on GitHub Actions
 
+This project supports running tests both locally in a visual mode and in headless mode through GitHub Actions for continuous integration.
+
+### Locally (Visual Mode)
 To execute the test suite, use the following command from the root directory of the project:
 
 ```sh
@@ -38,3 +41,8 @@ npm install
 ```sh
 npx wdio run wdio.conf.ts
 ```
+
+### On GitHub Actions (Headless Mode)
+For continuous integration, tests are configured to run in headless mode through GitHub Actions. This setup is ideal for automated testing environments where no visual output is necessary.
+
+The workflow configuration for GitHub Actions automatically adjusts settings for headless execution. No additional action is required. Tests triggered by push or pull request events on specified branches will run automatically in headless mode.
